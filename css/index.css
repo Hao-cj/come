@@ -98,7 +98,7 @@ li.img-li {
     width: 600px;
     height: 470px;
 }
-li.img-li:nth-child(5){
+li.img-li:nth-child(2){
     z-index: 999;
 }
 .head{
