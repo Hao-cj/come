@@ -1,0 +1,138 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    /* background-image: url(""); */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(177, 242, 242, 0.411);
+    background-size: cover;
+    min-width:600px;
+    height: 6000px ;
+    
+}
+
+.top-bar {                                                       
+    display: flex;
+    min-width: 600px;
+    height: 45px;
+    overflow: hidden;
+    justify-content: space-around;
+    background-color: rgb(246, 236, 230);
+    text-align: center;
+    line-height: 43px;
+    letter-spacing: 3px;
+}
+
+.annew {
+    display: flex;
+}
+
+.annew li a {
+    display: block;
+    padding: 0 15px;
+}
+
+.annew .line {
+    margin: 0 2px;
+}
+
+.annew li.h:hover {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    background-color: rgba(168, 163, 163, 0.303);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+
+}
+
+.left-nav {
+    width: 20%;
+    height: 600px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.right-nav {
+    width: 20%;
+    height: 600px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+}
+
+
+.img-li-bar {
+    width: 600px;
+    height: 470px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+li.img-li {
+    z-index: 4;
+    position: absolute;
+
+}
+.img-size{
+    width: 600px;
+    height: 470px;
+}
+li.img-li:nth-child(5){
+    z-index: 999;
+}
+.head{
+    text-align: center;
+    line-height: 100%;
+    font-size: 35px;
+    letter-spacing: 15px;
+
+    color: rgba(236, 118, 107, 0.693);
+}
+.back-img {
+    background-color: rgba(168, 163, 163, 0.303);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.pointer{
+    position: absolute;
+    z-index: 9999;
+    bottom: 59px;
+    left: 110px;
+}
+.pointer a{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0px 2px;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+.pointer a.active,
+.pointer a:hover{
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
